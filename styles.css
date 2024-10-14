@@ -1,0 +1,63 @@
+/* General styles */
+body {
+  background-color: #f0f0f0; /* Light background */
+}
+
+/* Navbar colors */
+.navbar {
+  background-color: #1e90ff; /* Diddy Kong Blue */
+}
+
+.navbar-brand {
+  color: #ffd700; /* Diddy Kong Yellow for the logo text */
+}
+
+.navbar-brand:hover {
+  color: #fff000; /* Slight hover effect */
+}
+
+.navbar-nav .nav-link {
+  color: #ffd700; /* Yellow links */
+}
+
+.navbar-nav .nav-link.active {
+  color: #ff4500; /* Active link in red */
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #32cd32; /* Hover effect in green */
+}
+
+/* Carousel controls */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #ffd700; /* Yellow carousel controls */
+}
+
+/* Cards */
+.card {
+  background-color: #fff;
+  border: 2px solid #ffd700; /* Yellow border */
+}
+
+.card-title {
+  color: #1e90ff; /* Blue titles */
+}
+
+.card-text {
+  color: #333; /* Keep text readable */
+}
+
+.card-text small {
+  color: #ff4500; /* Red for time text */
+}
+
+/* Carousel indicators */
+.carousel-indicators [data-bs-target] {
+  background-color: #ff4500; /* Red indicators */
+}
+
+.carousel-indicators .active {
+  background-color: #ffd700; /* Yellow active indicator */
+}
