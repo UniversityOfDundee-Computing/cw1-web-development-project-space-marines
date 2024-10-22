@@ -1,0 +1,59 @@
+/*Styling for Navigation Bar */
+.navbar{
+    background-image: linear-gradient(to right, #B81C00, #854b11);
+}
+
+.nav-image{
+    object-fit: cover;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    padding-left: 20px;
+    cursor: default;
+}
+
+.navbar-nav{
+    color: #ffffff;
+    font-weight: 700;
+    padding: 0 10px;
+}
+
+.nav-text-div{
+    width: 230px;
+}
+
+.nav-p1, .nav-p2{
+    color: rgb(231, 220, 220);
+}
+
+.nav-p1:hover{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 1.5);
+    color: #F9E52B;
+    transition: opacity 0.15s;
+    cursor: default;
+} 
+.nav-p2:hover{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 1.5);
+    color: #F9E52B;
+    transition: opacity 0.15s;
+    cursor: default;
+}
+
+.nav-p1{
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.nav-p2{
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.nav-link:hover{
+    background-color: rgba(17, 15, 15, 0.613);
+    color: #B81C00;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 1.5);
+    transition: opacity 0.15s;
+}
