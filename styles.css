@@ -132,62 +132,184 @@ body {
   transition: ease-out;
 }
 
-/* Media Section */
-#media-section {
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/* Timeline Section */
+#timeline-card {
+  background-color: #e4e2e2;
+  padding: 50px 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  margin-bottom: 25px;
 }
 
-#media-section h2 {
-  text-align: center;
+.timeline-title {
+  font-family: "Fredoka", sans-serif;
   color: #1e90ff;
+  font-size: 2.3rem;
+  font-weight: bold;
 }
 
-#media-carousel .carousel-item {
-  height: 400px;
+/* Grid Layout */
+.timeline-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: start;
+  justify-items: center;
 }
 
-#media-carousel .carousel-item img {
+/* Timeline Item */
+.timeline-item {
+  position: relative;
+  background-color: #ffd700;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Timeline Icon */
+.timeline-icon {
+  width: 50px;
+  height: 50px;
+  background-color: #1e90ff;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: background-color 0.3s ease;
+}
+
+.timeline-item:hover .timeline-icon {
+  background-color: #ff4500;
+}
+
+/* Timeline Content */
+.timeline-content {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.timeline-content h3 {
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.timeline-content p {
+  color: #666;
+  font-size: 1rem;
+}
+
+/* Video Background Section */
+#video-background-section {
+  position: relative;
+  height: 500px;
+  background-color: #000;
+  overflow: hidden;
+  margin-bottom: 25px;
+  margin-left: 25px;
+  margin-right: 25px;
+  border-radius: 12px;
+}
+
+#video-background-section video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: 1;
   object-fit: cover;
-  width: 100%;
+  opacity: 0.5;
+}
+
+/* Cards over video */
+.video-cards-container {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   height: 100%;
 }
 
-.carousel-item {
-  transition: transform 0.6s ease;
-  transform-style: preserve-3d;
+.hover-card {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
 
-.carousel-item-next.carousel-item-left,
-.carousel-item-prev.carousel-item-right {
-  transform: rotateY(180deg);
+.hover-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
 }
 
-/* Cards */
-.card {
-  background-color: #fff;
-  border: 2px solid #ffd700; /* Yellow border */
+.hover-card .text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.2rem;
 }
 
-.card-title {
-  color: #1e90ff; /* Blue titles */
+.hover-card:hover img {
+  opacity: 0.3;
 }
 
-.card-text {
-  color: #333; /* Keep text readable */
+.hover-card:hover .text-overlay {
+  opacity: 1;
 }
 
-.card-text small {
-  color: #ff4500; /* Red for time text */
+/* Footer */
+footer {
+  background-color: #ffd700;
+  color: #760000;
+  padding: 40px;
+  text-align: center;
 }
 
-/* Carousel indicators */
-.carousel-indicators [data-bs-target] {
-  background-color: #ff4500; /* Red indicators */
+/* RESPONSIVENESS */
+
+/* Responsive Grid */
+@media (max-width: 768px) {
+  .timeline-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
-.carousel-indicators .active {
-  background-color: #ffd700; /* Yellow active indicator */
+/* RESPONSIVENESS */
+@media (max-width: 768px) {
+  .timeline-grid {
+    grid-template-columns: 1fr;
+  }
+  .navbar-nav {
+    text-align: center;
+  }
 }
