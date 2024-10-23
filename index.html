@@ -25,6 +25,12 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- Font Awesome Link -->
+    <script
+      src="https://kit.fontawesome.com/20d4dd4e51.js"
+      crossorigin="anonymous"
+    ></script>
+
     <link rel="stylesheet" href="styles.css" />
 
     <!-- TITLE -->
@@ -33,7 +39,19 @@
 
   <body>
     <!-- Header -->
-    <div id="diddy-header">DIDDY KONG RACING</div>
+    <div id="diddy-header">
+      <img
+        src="Images/HeaderIcon.png"
+        alt="Icon on the Right"
+        class="right-icon"
+      />
+      DIDDY KONG RACING
+      <img
+        src="Images/HeaderIcon.png"
+        alt="Icon on the Left"
+        class="left-icon"
+      />
+    </div>
 
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg">
@@ -52,7 +70,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item">
-              <a class="nav-link active" area-current="page" href="#">Home</a>
+              <a class="nav-link" area-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="development/development.html"
@@ -76,13 +94,16 @@
       <div id="media-carousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="media1.jpg" alt="Media 1" />
+            <img
+              src="Images/Media1.jpg"
+              alt="Diddy Kong Racing Official Image"
+            />
           </div>
           <div class="carousel-item">
-            <img src="media2.jpg" alt="Media 2" />
+            <img src="Images/Media2.jpg" alt="Diddy Kong Image" />
           </div>
           <div class="carousel-item">
-            <img src="media3.jpg" alt="Media 3" />
+            <img src="Images/Media3.gif" alt="Gameplay GIF" />
           </div>
         </div>
         <button
@@ -193,26 +214,38 @@
 
     <!-- Video Background Section with Cards -->
     <section id="video-background-section">
-      <video autoplay muted loop>
-        <source src="your-video.mp4" type="video/mp4" />
-        Your browser does not support HTML5 video.
-      </video>
+      <div class="embed-responsive">
+        <iframe
+          width="100%"
+          height="100%"
+          src="https://www.youtube.com/embed/6W0IjpBrFY0?autoplay=1&mute=1&loop=1&playlist=6W0IjpBrFY0&controls=0&modestbranding=1&showinfo=0&rel=0&iv_load_policy=3"
+          title="Diddy Kong Racing Gameplay"
+          frameborder="0"
+          allow="autoplay; encrypted-media"
+          allowfullscreen
+        ></iframe>
+      </div>
       <div class="video-cards-container">
         <div class="hover-card">
-          <img src="diddy-overview1.jpg" alt="Diddy Overview 1" />
+          <img src="Images/videocard1.webp" alt="Diddy Overview 1" />
           <div class="text-overlay">
             <p>
               Diddy Kong is the main character in Diddy Kong Racing and a fan
-              favorite!
+              favorite! Diddy Kong is not just Donkey Kong's trusted companion
+              but a hero in his own right. His agility and quick thinking make
+              him the perfect leader in the fight to save Timber's Island from
+              Wizpig's grasp.
             </p>
           </div>
         </div>
         <div class="hover-card">
-          <img src="diddy-overview2.jpg" alt="Diddy Overview 2" />
+          <img src="Images/videocard2.webp" alt="Diddy Overview 2" />
           <div class="text-overlay">
             <p>
               He drives a car, hovers a hovercraft, and flies a plane in this
-              adventure-filled game!
+              adventure-filled game! Whether it's racing through mountain ranges
+              or dodging obstacles mid-flight, Diddy's piloting skills give him
+              an edge over his rivals.
             </p>
           </div>
         </div>
@@ -220,6 +253,46 @@
     </section>
 
     <!-- Footer -->
-    <footer>&copy; 2024 Diddy Kong Racing Fansite. All rights reserved.</footer>
+    <footer>
+      &copy; 2024 Diddy Kong Racing Website.
+      <br />
+      <div class="owners">
+        <span>Bhagirathsinh Parmar</span>
+        <div class="socials">
+          <a
+            href="https://www.linkedin.com/in/bhagirath-parmar-385865269/"
+            target="_blank"
+          >
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/bhagirathsinhp" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+
+        <span>Peter Ferguson</span>
+        <div class="socials">
+          <a href="https://www.linkedin.com" target="_blank">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/PeteF-bot" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+
+        <span> Romeo Akurugu</span>
+        <div class="socials">
+          <a
+            href="https://www.linkedin.com/in/romeo-akurugu-623a0a1aa/"
+            target="_blank"
+          >
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/rakurugu" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
