@@ -94,6 +94,44 @@ body {
   color: #32cd32;
 }
 
+/* Fun Fact Section */
+#fun-fact {
+  margin: 30px 0;
+  padding: 30px;
+  background-color: #ffd700;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+
+#fun-fact h2 {
+  font-size: 2.3rem;
+  font-weight: bold;
+  color: #1e90ff;
+  margin-bottom: 15px;
+}
+
+#fun-fact p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+#fun-fact:hover {
+  background-color: #ffcc00;
+  transform: scale(1.02);
+}
+
+#fun-fact:hover::after {
+  width: 100%;
+  transition: ease-out;
+}
+
 /* Media Section */
 #media-section {
   margin: 0 auto;
