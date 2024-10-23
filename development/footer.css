@@ -1,0 +1,20 @@
+/*Styling for footer of Page*/
+#back-top{
+    text-decoration: none;
+    color: #B81C00;
+}
+
+#copyright{
+    color: #B81C00;
+    cursor: default;
+}
+
+#back-top:hover{
+    color: #333333;
+    transition: 0.15s;
+}
+
+.footer-line{
+    color: #B81C00;
+    border-width: 2px;
+}

@@ -1,0 +1,19 @@
+/* Styling for Development of Diddy Dong Banners */
+body{
+    background-color: #F9E52B;
+}
+
+.text-center{
+    color: #B81C00;
+}
+.text-center:hover{
+    background-image: linear-gradient(to right, #B81C00, #854b11);
+    color: #F9E52B;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 1.5);
+    transition: opacity 0.15s;
+    cursor: default;
+}
+
+.cards-devt{
+    background-color: #B81C00;
+}
