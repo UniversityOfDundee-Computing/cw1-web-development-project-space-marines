@@ -1,5 +1,5 @@
 # Diddy Kong Racing Website
-Color Palettes for Diddy Kong Racing:
+Please consider below mentioned Color Palettes for Diddy Kong Racing:
 
 Primary Colors (Inspired by Diddy Kong Racing’s logo and world):
 
