@@ -10,8 +10,10 @@
 }
 
 #back-top:hover{
-    color: #333333;
+
+    color: #ffffff;
     transition: 0.15s;
+    font-family: "Fredoka", sans-serif;
 }
 
 .footer-line{

@@ -18,6 +18,11 @@ body{
     background-color: #B81C00;
 }
 
+#banner-1{
+    font-family: bungee, sans-serif;
+}
+
+
 /* Styling for cards*/
 
 .card{
@@ -103,4 +108,8 @@ body{
     color: #F9E52B;
     transition: opacity 0.15s;
     cursor: default;
+}
+
+#card-info-1{
+    font-family: "Fredoka", sans-serif;
 }
