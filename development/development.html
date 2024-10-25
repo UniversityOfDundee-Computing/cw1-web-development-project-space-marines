@@ -5,6 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Development</title>
 
+    <!-- Bungee Fonts Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+
+    <!-- Fredoka One Fonts Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- Animate CSS link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
@@ -18,25 +31,36 @@
 
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="./images/kong2.png" alt="Kong on a motorcycle" class="nav-image">
-          </a>
-          <div class="nav-text-div">
-            <p class="nav-p1">Diddy Kong Racing</p>
-            <p class="nav-p2">A Racing game extraordinary</p>
+    <header>
+      <!-- Navigation Bar -->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src="./images/kong2.png" alt="Kong on a motorcycle" class="nav-image">
+            </a>
+            <div class="nav-text-div">
+              <p class="nav-p1">Diddy Kong Racing</p>
+              <p class="nav-p2">A Racing game extraordinary</p>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../homepage/index.html" id="navTxt-1">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#" id="navTxt-1">Development</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../" id="navTxt-1">Gameplay</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../reception/reception.html" id="navTxt-1">Reception</a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../homepage/index.html">Home</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-    </nav>
+      </nav>
+    </header>
 
     <!-- Main Section -->
     <main>
@@ -45,8 +69,8 @@
       <div class="container">
         <div class="row">
           <div class="col mt-5 mb-5">
-            <h1 class="text-center animate__animated animate__bounceInDown">Development of Diddy Kong</h1>
-            <p class="text-center animate__animated animate__fadeInUp">A 1997 kart racing game developed and published by Rare for the Nintendo 64</p>
+            <h1 class="text-center animate__animated animate__bounceInDown" id="banner-1">Development of Diddy Kong</h1>
+            <p class="text-center animate__animated animate__fadeInUp" id="banner-1">A 1997 kart racing game developed and published by Rare for the Nintendo 64</p>
           </div>
         </div>          
       </div>
@@ -81,10 +105,10 @@
                         </div>
                     </div>
                     <div class="video-info">
-                            <p class="card-title-description">
+                            <p class="card-title-description" id="banner-1">
                                 Development: Early On
                             </p>
-                        <p class="card-description-info">
+                        <p class="card-description-info" id="card-info-1">
                           Development of the game began after the release of Killer Instinct 2, in which a team was split into making Killer Instinct Gold for the Nintendo 64 and a new racing game for that console.[10] During development, the game became influenced by Walt Disney World and soon evolved into an adventure game called Wild Cartoon Kingdom, with which Nintendo had no involvement. In June 1997, the game was altered to Pro-Am 64, an unrelated follow-up to the NES racing game R.C. Pro-Am.[10][11] According to Lee Schuneman, the Pro Am 64 project featured three-wheeled trikes in contrast to radio-controlled cars.[11]
                         </p>
                     </div>
@@ -95,7 +119,7 @@
             
             <!-- card 2 -->
             <div class="col-md-12 col-lg-4 d-flex justify-content-center mb-5" id="card-supreme">
-              <div class="card animate__animated animate__slideInUp animate__delay-3s">
+              <div class="card animate__animated animate__slideInUp animate__delay-2s">
                 <div class="col-md-8">
                   <img src="./images/kong2.png" class="card-img" alt="Kong on a motorcycle">
                 </div>
@@ -117,10 +141,10 @@
                         </div>
                     </div>
                     <div class="video-info">
-                            <p class="card-title-description">
+                            <p class="card-title-description" id="banner-1">
                                 Development: challenges
                             </p>
-                        <p class="card-description-info">
+                        <p class="card-description-info" id="card-info-1">
                           With Banjo-Kazooie being delayed until the summer of 1998, the team was adamant for a release of an AAA video game in time for 1997's Christmas season. Rare felt that Pro Am 64 did not have a strong enough intellectual property to capture the attention of consumers, and thus changed the licence to feature Diddy Kong.[10] According to Lee Musgrave, the decision to choose Diddy Kong rather than Donkey Kong was based on their own choice, a decision which Nintendo "enjoyed". Once the intellectual property was changed, the team were left to adapt the visual aesthetics of the game and packaging before it could be released.[10] Musgrave recalled that the ultimate goal of the game was to make it "run as fast" as Mario Kart 64, which proved difficult during development as the latter game utilised 2D character sprites whereas Diddy Kong Racing used fully 3D models.
                         </p>
                     </div>
@@ -153,10 +177,10 @@
                         </div>
                     </div>
                     <div class="video-info">
-                            <p class="card-title-description">
+                            <p class="card-title-description" id="banner-1">
                                 Development: Success
                             </p>
-                        <p class="card-description-info">
+                        <p class="card-description-info" id="card-info-1">
                           Musgrave later attributed the success of the overall project due to the "small team" of 14 people who worked on it.[10] In an October 2012 interview, Musgrave said that Timber the Tiger would have been the main character of Pro Am 64 had the intellectual property for Diddy Kong Racing not been conceived.[12] Two of the characters who featured in Diddy Kong Racing, Banjo the Bear and Conker the Squirrel, starred in games (Banjo-Kazooie and Conker's Bad Fur Day, respectively) which were unveiled to the public before Diddy Kong Racing, at the June 1997 Electronic Entertainment Expo (E3), but ultimately not released until after Diddy Kong Racing.[13][14] Rare stated that they chose not to exhibit Diddy Kong Racing at E3 because of the proprietary animation technology used in the game.[14]
                         </p>
                     </div>
