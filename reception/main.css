@@ -1,0 +1,22 @@
+/*Styling for header*/
+.header-txt{
+    font-family: bungee, sans-serif;
+    color: #F9E52B;
+}
+
+#header-image{
+    object-fit: cover;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    padding-left: 20px;
+    cursor: default;
+}
+
+.header-txt:hover{
+    background-image: linear-gradient(to right, #F9E52B, #854b11);
+    color: #B81C00;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 1.5);
+    transition: opacity 0.15s;
+    cursor: default;
+}
