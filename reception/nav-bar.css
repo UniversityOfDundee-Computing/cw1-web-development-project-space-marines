@@ -1,0 +1,50 @@
+/* General body */
+body {
+  font-family: "Fredoka", sans-serif;
+  background-color: #e60000 !important;
+  color: #333;
+  overflow-x: hidden;
+}
+
+/*Styling for Navigation Bar */
+.navbar{
+  background-image: linear-gradient(to right, #F9E52B, #854b11);
+}
+
+.nav-image{
+  object-fit: cover;
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  padding-left: 20px;
+  cursor: default;
+}
+
+.nav-text-div{
+  width: 230px;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-p1{
+  font-family: bungee, sans-serif;
+  font-weight: bolder;
+  font-size: larger;
+  color: #854b11;
+}
+
+.navbar-nav{
+  color: #ffffff;
+  font-weight: 700;
+  padding: 0 10px;
+}
+
+#navTxt-1{
+  font-family: "Fredoka", sans-serif;
+  color: #F9E52B;
+}
+
+#navTxt-1:hover{
+  font-family: "Fredoka", sans-serif;
+  color: #e60000;
+}
