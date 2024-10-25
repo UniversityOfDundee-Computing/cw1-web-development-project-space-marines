@@ -1,0 +1,19 @@
+/*Styling for footer of Page*/
+#back-top, #copyright{
+    text-decoration: none;
+    color: #F9E52B;
+    cursor: default;
+}
+
+#back-top:hover{
+    color: #ffffff;
+    transition: 0.15s;
+    font-family: "Fredoka", sans-serif;
+    cursor: pointer;
+}
+
+.footer-line{
+    color: #F9E52B;
+    border: 2px solid;
+    border-color: #F9E52B;
+}
