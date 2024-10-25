@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Fredoka Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Links -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Font Awesome Link -->
+    <script
+      src="https://kit.fontawesome.com/20d4dd4e51.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="styles.css" />
+    <title>Diddy Kong Racing - Gameplay</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <section id="diddy-header">
+      <div class="container">
+        <img src="images/HeaderIcon.png" alt="Diddy Icon" class="left-icon" />
+        <h1>DIDDY KONG RACING</h1>
+        <img src="images/HeaderIcon.png" alt="Diddy Icon" class="right-icon" />
+
+        <!-- Home Button -->
+        <a href="../homepage/index.html" class="home-button">
+          <i class="fa-solid fa-house"></i> Home
+        </a>
+      </div>
+    </section>
+
+    <!-- Gameplay Header Section -->
+    <section id="gameplay-header">
+      <div class="background-animation"></div>
+      <h1 class="header-title">Gameplay Overview</h1>
+      <p class="header-subtitle">
+        Diddy Kong Racing is a unique combination of adventure and racing
+        developed by Rare and released for the Nintendo 64 in 1997. Featuring a
+        colorful cast of characters and three types of vehicles—cars,
+        hovercrafts, and planes—the game lets players explore diverse terrains,
+        from jungles to snowy mountains, as they compete in thrilling races.
+        Players must collect golden balloons, unlock new worlds, and ultimately
+        defeat the evil alien Wizpig to save Timber Island. The adventure
+        doesn't stop at racing—each world contains hidden secrets, boss battles,
+        and challenging time trials.
+      </p>
+    </section>
+
+    <!-- Characters & Stats Section -->
+    <section id="characters-stats" class="py-5 bg-light text-center">
+      <div class="container">
+        <h2 class="mb-5 text-primary">Characters</h2>
+        <div class="row justify-content-center">
+          <!-- Diddy Kong -->
+          <div class="col-lg-2 col-md-3 col-6 mb-4">
+            <div class="card bg-warning text-dark h-100 shadow-sm">
+              <img
+                src="images/diddy.png"
+                class="card-img-top"
+                alt="Diddy Kong"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Diddy Kong</h3>
+                <p><strong>Speed:</strong> 8/10</p>
+                <p><strong>Handling:</strong> 7/10</p>
+                <p>Leader of the team, skilled on multiple terrains.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Banjo -->
+          <div class="col-lg-2 col-md-3 col-6 mb-4">
+            <div class="card bg-info text-white h-100 shadow-sm">
+              <img src="images/banjo.png" class="card-img-top" alt="Banjo" />
+              <div class="card-body">
+                <h3 class="card-title">Banjo</h3>
+                <p><strong>Speed:</strong> 6/10</p>
+                <p><strong>Handling:</strong> 9/10</p>
+                <p>
+                  High handling for tricky areas and versatile across tracks.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Conker -->
+          <div class="col-lg-2 col-md-3 col-6 mb-4">
+            <div class="card bg-danger text-white h-100 shadow-sm">
+              <img src="images/conker.png" class="card-img-top" alt="Conker" />
+              <div class="card-body">
+                <h3 class="card-title">Conker</h3>
+                <p><strong>Speed:</strong> 7/10</p>
+                <p><strong>Handling:</strong> 6/10</p>
+                <p>
+                  Balanced in speed and control, adaptable to different tracks.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tiptup -->
+          <div class="col-lg-2 col-md-3 col-6 mb-4">
+            <div class="card bg-success text-white h-100 shadow-sm">
+              <img src="images/tiptup.png" class="card-img-top" alt="Tiptup" />
+              <div class="card-body">
+                <h3 class="card-title">Tiptup</h3>
+                <p><strong>Speed:</strong> 5/10</p>
+                <p><strong>Handling:</strong> 8/10</p>
+                <p>
+                  Easy to control with excellent handling, great for beginners.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timber -->
+          <div class="col-lg-2 col-md-3 col-6 mb-4">
+            <div class="card bg-primary text-white h-100 shadow-sm">
+              <img src="images/timber.png" class="card-img-top" alt="Timber" />
+              <div class="card-body">
+                <h3 class="card-title">Timber</h3>
+                <p><strong>Speed:</strong> 7/10</p>
+                <p><strong>Handling:</strong> 7/10</p>
+                <p>A balanced choice, adaptable across all types of races.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gameplay details Section -->
+    <section id="gameplay-details">
+      <div class="container d-flex align-items-start gap-4">
+        <!-- Description Section -->
+        <div class="description">
+          <p>
+            <strong>Diddy Kong Racing</strong> offers a blend of racing
+            excitement with adventure elements, bringing players into an
+            immersive world filled with challenges across diverse landscapes.
+            Players must collect golden balloons to unlock new levels and
+            worlds, gradually advancing to face the final antagonist, Wizpig, in
+            a race for victory and peace on Timber Island.
+          </p>
+          <ul class="features">
+            <li>
+              <img src="images/car.png" alt="Car Icon" class="feature-icon" />
+              Perfect for tight turns and challenging road tracks. The car's
+              responsiveness and speed provide an ideal balance for standard
+              racing across most terrains.
+            </li>
+            <li>
+              <img
+                src="images/hovercraft.png"
+                alt="Hovercraft Icon"
+                class="feature-icon"
+              />
+              Designed for water tracks, the hovercraft glides over rivers and
+              lakes, adding a layer of challenge and excitement with water-based
+              maneuvers.
+            </li>
+            <li>
+              <img
+                src="images/plane.png"
+                alt="Plane Icon"
+                class="feature-icon"
+              />
+              Take to the skies with the plane, maneuvering through aerial
+              tracks filled with rings and obstacles that test precision and
+              control.
+            </li>
+          </ul>
+          <!-- Link to Modal -->
+          <label for="modal-toggle" class="more-info-button"
+            >More About Vehicles</label
+          >
+        </div>
+
+        <!-- Video Section -->
+        <div class="video-section">
+          <iframe
+            width="100%"
+            height="450"
+            src="https://www.youtube.com/embed/4enLBJgd02k?start=225&autoplay=1&mute=1&loop=1&playlist=4enLBJgd02k&controls=0&modestbranding=1&rel=0&disablekb=1"
+            title="Diddy Kong Racing Gameplay"
+            frameborder="0"
+            allow="autoplay; encrypted-media"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal -->
+    <input type="checkbox" id="modal-toggle" hidden />
+    <div class="modal">
+      <div class="modal-content">
+        <label for="modal-toggle" class="close-button">&times;</label>
+        <h3>More About Vehicles</h3>
+        <div class="vehicle-details">
+          <i class="fa-solid fa-car-side modal-icon"></i>
+          <p>
+            <strong>Car:</strong> Use drifting techniques on tight turns to
+            maintain speed. Best for technical courses with sharp bends.
+          </p>
+        </div>
+
+        <div class="vehicle-details">
+          <i class="fa-solid fa-water modal-icon"></i>
+          <p>
+            <strong>Hovercraft:</strong> Anticipate curves early for smooth,
+            wide turns. Maintaining momentum is key on water tracks.
+          </p>
+        </div>
+
+        <div class="vehicle-details">
+          <i class="fa-solid fa-plane modal-icon"></i>
+          <p>
+            <strong>Plane:</strong> Control altitude carefully. Dive to speed up
+            and pull up for rings or tight corners.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Power-Ups & Boosts Section -->
+    <section id="power-ups">
+      <h2>Power-Ups and Boosts</h2>
+      <div class="power-ups-container">
+        <div class="power-up">
+          <img
+            src="images/red-balloon.png"
+            alt="Red Balloon"
+            class="power-up-img"
+          />
+          <h3>Red Balloon - Missile</h3>
+          <p>
+            Fires a homing missile that automatically tracks the closest
+            opponent, giving players a tactical advantage.
+          </p>
+        </div>
+        <div class="power-up">
+          <img
+            src="images/blue-balloon.png"
+            alt="Blue Balloon"
+            class="power-up-img"
+          />
+          <h3>Blue Balloon - Boost</h3>
+          <p>
+            Activates a speed boost, propelling players forward quickly to catch
+            up or gain distance from competitors.
+          </p>
+        </div>
+        <div class="power-up">
+          <img
+            src="images/green-balloon.png"
+            alt="Green Balloon"
+            class="power-up-img"
+          />
+          <h3>Green Balloon - Shield</h3>
+          <p>
+            Grants a temporary shield that protects from enemy attacks, offering
+            a strategic defense during intense races.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Races & Courses Section -->
+    <section id="races-courses" class="py-5 bg-dark text-center text-light">
+      <div class="container">
+        <h2 class="mb-5 text-warning">Races & Courses</h2>
+        <div class="row">
+          <!-- Course Cards Row 1 -->
+          <div class="col-md-4 mb-4">
+            <div class="card track-card bg-gradient bg-primary text-white">
+              <img
+                src="images/dino_domain.png"
+                class="card-img-top"
+                alt="Dino Domain"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Dino Domain</h3>
+                <p class="badge badge-secondary">Difficulty: Easy</p>
+                <p>Prehistoric landscapes with dinosaurs.</p>
+                <div class="hazards">
+                  <span><i class="fa-solid fa-leaf"></i> Jungle</span>
+                  <span><i class="fa-solid fa-dinosaur"></i> Dinosaurs</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card track-card bg-gradient bg-info text-dark">
+              <img
+                src="images/snowflake_mountain.png"
+                class="card-img-top"
+                alt="Snowflake Mountain"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Snowflake Mountain</h3>
+                <p class="badge badge-primary">Difficulty: Intermediate</p>
+                <p>Snowy landscapes, icy surfaces, sharp turns.</p>
+                <div class="hazards">
+                  <span><i class="fa-solid fa-snowflake"></i> Ice</span>
+                  <span><i class="fa-solid fa-mountain"></i> Terrain</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card track-card bg-gradient bg-success text-white">
+              <img
+                src="images/sherbet_island.png"
+                class="card-img-top"
+                alt="Sherbet Island"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Sherbet Island</h3>
+                <p class="badge badge-secondary">Difficulty: Intermediate</p>
+                <p>Water-based challenges and ramps.</p>
+                <div class="hazards">
+                  <span><i class="fa-solid fa-water"></i> Water</span>
+                  <span><i class="fa-solid fa-umbrella-beach"></i> Beach</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Course Cards Row 2 -->
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="card track-card bg-gradient bg-warning text-dark">
+              <img
+                src="images/pirate_lagoon.png"
+                class="card-img-top"
+                alt="Pirate Lagoon"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Pirate lagoon</h3>
+                <p class="badge badge-secondary">Difficulty: Intermediate</p>
+                <p>
+                  A tropical-themed course with tight turns and water hazards.
+                </p>
+                <div class="hazards">
+                  <span><i class="fa-solid fa-water"></i> Water Waves</span>
+                  <span><i class="fa-solid fa-anchor"></i> Island</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card track-card bg-gradient bg-danger text-white">
+              <img
+                src="images/crescent_island.png"
+                class="card-img-top"
+                alt="Crescent Island"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Crescent Island</h3>
+                <p class="badge badge-secondary">Difficulty: Intermediate</p>
+                <p>Blends beach terrain with cave routes.</p>
+                <div class="hazards">
+                  <span><i class="fa-solid fa-mountain"></i> Slopes</span>
+                  <span><i class="fa-solid fa-campground"></i> Dunes</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card track-card bg-gradient bg-light text-dark">
+              <img
+                src="images/spacedust_alley.png"
+                class="card-img-top"
+                alt="Spacedust Alley"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Spacedust Alley</h3>
+                <p class="badge badge-primary text-dark">Difficulty: Hard</p>
+                <p>Challenging space terrain with obstacles.</p>
+                <div class="hazards">
+                  <span><i class="fa-solid fa-space-shuttle"></i> Space</span>
+                  <span><i class="fa-solid fa-asterisk"></i> Obstacles</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Boss Battles Section -->
+    <section id="boss-battles" class="py-5 custom-boss-section">
+      <div class="container">
+        <h2 class="text-light mb-5">Boss Battles</h2>
+        <div class="row">
+          <!-- Tricky the Triceratops -->
+          <div class="col-md-4 mb-4">
+            <div class="boss-poster custom-poster-shadow">
+              <img
+                src="images/tricky.png"
+                alt="Tricky the Triceratops"
+                class="boss-image"
+              />
+              <div class="poster-content">
+                <h3>Tricky the Triceratops</h3>
+                <p>
+                  Lava-drenched paths and a relentless triceratops await. Will
+                  you outrun his stomping charge?
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bluey the Walrus -->
+          <div class="col-md-4 mb-4">
+            <div class="boss-poster custom-poster-shadow">
+              <img
+                src="images/bluey.png"
+                alt="Bluey the Walrus"
+                class="boss-image"
+              />
+              <div class="poster-content">
+                <h3>Bluey the Walrus</h3>
+                <p>
+                  The icy arenas are unforgiving, and Bluey’s blizzard tactics
+                  will test your grip on slick turns.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bubbler the Octopus -->
+          <div class="col-md-4 mb-4">
+            <div class="boss-poster custom-poster-shadow">
+              <img
+                src="images/bubbler.png"
+                alt="Bubbler the Octopus"
+                class="boss-image"
+              />
+              <div class="poster-content">
+                <h3>Bubbler the Octopus</h3>
+                <p>
+                  Dodge bubbles and underwater traps as Bubbler aims to keep you
+                  from the finish line.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Wizpig -->
+          <div class="col-md-4 mb-4">
+            <div class="boss-poster custom-poster-shadow">
+              <img src="images/wizpig.png" alt="Wizpig" class="boss-image" />
+              <div class="poster-content">
+                <h3>Wizpig</h3>
+                <p>
+                  Face off against the tyrannical Wizpig, where flames and
+                  collapsing pathways test your skills to the limit as you race
+                  to overthrow Timber Island's toughest foe.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      &copy; 2024 Diddy Kong Racing Website.
+      <br />
+      <div class="owners">
+        <span>Bhagirathsinh Parmar</span>
+        <div class="socials">
+          <a
+            href="https://www.linkedin.com/in/bhagirath-parmar-385865269/"
+            target="_blank"
+          >
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/bhagirathsinhp" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+
+        <span>Peter Ferguson</span>
+        <div class="socials">
+          <a href="https://www.linkedin.com" target="_blank">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/PeteF-bot" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+
+        <span> Romeo Akurugu</span>
+        <div class="socials">
+          <a
+            href="https://www.linkedin.com/in/romeo-akurugu-623a0a1aa/"
+            target="_blank"
+          >
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/rakurugu" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
