@@ -31,6 +31,7 @@ body {
   font-weight: bolder;
   font-size: larger;
   color: #854b11;
+  cursor: default;
 }
 
 .navbar-nav{
